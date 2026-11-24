@@ -38,3 +38,19 @@ details[open] > div {
 .accordeon > details > summary::-webkit-details-marker {
   display: none;
 }
+.accordeon > details > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordeon > details > summary::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid #bbb;
+  margin-right: 40px;
+  transition: transform 0.3s;
+}
