@@ -3,18 +3,16 @@
 */
 .accordeon {
   display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-}
-details {
-  /* fermé et ouvert */
-  flex-shrink: 0;
+  flex-direction: column;
+  gap: 10px;
+  width: 440px;
 }
 
-details > summary,
-details > div {
-  display: inline-block;
-  vertical-align: top;
+details {
+  /* fermé et ouvert */
+  background: #eee;
+  border-radius: 10px;
+  padding: 12px;
 }
 
 details > summary {
@@ -23,11 +21,13 @@ details > summary {
 
 details > summary img {
   display: block;
-  width: 240px;
+  width: 250px;
 }
 
+details[open] {
+  /* ouvert */
+}
 
 details[open] > div {
-  width: 380px;
-  margin-left: 2rem;
+  padding: 0 12px;
 }
