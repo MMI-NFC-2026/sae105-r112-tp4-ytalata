@@ -25,3 +25,11 @@ details > summary img {
   display: block;
   width: 240px;
 }
+details[open] {
+  /* ouvert */
+}
+
+details[open] > div {
+  width: 380px;
+  margin-left: 2rem;
+}
