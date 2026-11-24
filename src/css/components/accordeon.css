@@ -54,3 +54,7 @@ details[open] > div {
   margin-right: 40px;
   transition: transform 0.3s;
 }
+.accordeon > details[open] > summary::after {
+  border-left-color: pink;
+  transform: rotate(90deg);
+}
