@@ -1,3 +1,60 @@
 /**
 * Accordeon
 */
+.accordeon {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 440px;
+}
+
+details {
+  /* fermé et ouvert */
+  background: #eee;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+details > summary {
+  cursor: pointer;
+}
+
+details > summary img {
+  display: block;
+  width: 250px;
+}
+
+details[open] {
+  /* ouvert */
+}
+
+details[open] > div {
+  padding: 0 12px;
+}
+.accordeon > details > summary {
+  list-style: none;
+}
+.accordeon > details > summary::marker,
+.accordeon > details > summary::-webkit-details-marker {
+  display: none;
+}
+.accordeon > details > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordeon > details > summary::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid #bbb;
+  margin-right: 40px;
+  transition: transform 0.3s;
+}
+.accordeon > details[open] > summary::after {
+  border-left-color: pink;
+  transform: rotate(90deg);
+}

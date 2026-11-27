@@ -1,6 +1,6 @@
-- nom :
-- prénom :
-- URL Netlify :
+- nom :Talata
+- prénom : Yanis
+- URL Netlify :guileless-sunflower-f30c53.netlify.app
 
 # Travail
 
